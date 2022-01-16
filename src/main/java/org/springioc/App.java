@@ -7,7 +7,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext cnt = new ClassPathXmlApplicationContext("config.xml");
+        ApplicationContext cnt = new ClassPathXmlApplicationContext("ConfigFiles/config.xml");
         Student s = (Student) cnt.getBean("student1");
 
         Student s1 = (Student) cnt.getBean("student2");
