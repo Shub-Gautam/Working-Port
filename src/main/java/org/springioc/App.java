@@ -10,6 +10,9 @@ public class App
         ApplicationContext cnt = new ClassPathXmlApplicationContext("config.xml");
         Student s = (Student) cnt.getBean("student1");
 
+        Student s1 = (Student) cnt.getBean("student2");
+
         System.out.println(s);
+        System.out.println(s1);
     }
 }
