@@ -15,4 +15,10 @@
             <ref bean="ds"/>
         </property>
     </bean>
+
+    <bean class="org.springjdbc.dao.StudentDaoimpl" name="studentDaoimpl">
+        <property name="jdbcTemplate">
+            <ref bean="jdbcTemplate"/>
+        </property>
+    </bean>
 </beans>

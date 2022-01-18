@@ -1,9 +1,12 @@
-package org.springjdbc;
+package org.springjdbc.entities;
 
 public class Student {
     private int id ;
     private String name ;
     private String address ;
+
+    public Student() {
+    }
 
     @Override
     public String toString() {
