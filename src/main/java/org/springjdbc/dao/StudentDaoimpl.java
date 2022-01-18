@@ -14,6 +14,13 @@ public class StudentDaoimpl implements StudentDao {
         return result ;
     }
 
+    @Override
+    public int change(Student student) {
+        String updateQuery = "UPDATE student SET name=? , address=? WHERE id=?";
+        int result = this.jdbcTemplate.update(updateQuery,student.getName(),student.getAddress(),student.getId());
+        return result ;
+    }
+
     public JdbcTemplate getJdbcTemplate() {
         return jdbcTemplate;
     }
